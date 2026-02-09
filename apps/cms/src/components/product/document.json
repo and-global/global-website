@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_product_documents",
+  "info": {
+    "displayName": "Document",
+    "icon": "file",
+    "description": "Downloadable product documents"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["manual", "datasheet", "brochure", "certificate", "other"],
+      "default": "datasheet"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["files"]
+    }
+  }
+}

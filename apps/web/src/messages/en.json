@@ -1,0 +1,61 @@
+{
+  "common": {
+    "siteName": "A&D Company, Ltd.",
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact",
+    "search": "Search",
+    "searchPlaceholder": "Search products...",
+    "language": "Language",
+    "english": "English",
+    "japanese": "日本語",
+    "loading": "Loading...",
+    "notFound": "Page not found",
+    "backToHome": "Back to Home",
+    "viewAll": "View All",
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "download": "Download",
+    "close": "Close",
+    "copyright": "© {year} A&D Company, Ltd. All rights reserved."
+  },
+  "home": {
+    "heroTitle": "Precision in Every Measurement",
+    "heroSubtitle": "Leading manufacturer of measuring instruments, medical devices, and automotive products",
+    "categoriesTitle": "Product Categories",
+    "featuredTitle": "Featured Products",
+    "viewProducts": "View Products"
+  },
+  "products": {
+    "title": "Products",
+    "allCategories": "All Categories",
+    "noProducts": "No products found.",
+    "specifications": "Specifications",
+    "downloads": "Downloads",
+    "relatedProducts": "Related Products",
+    "modelNumber": "Model Number",
+    "sku": "SKU",
+    "fileSize": "{size} MB",
+    "searchResults": "{count} results found",
+    "noSearchResults": "No results found for \"{query}\"."
+  },
+  "about": {
+    "title": "About Us"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "subjectLabel": "Subject",
+    "messageLabel": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "successMessage": "Thank you! Your message has been sent.",
+    "errorMessage": "Something went wrong. Please try again."
+  },
+  "seo": {
+    "defaultTitle": "A&D Company, Ltd. - Precision Measuring Instruments",
+    "defaultDescription": "A&D Company, Ltd. manufactures precision measuring instruments, medical devices, and automotive testing products for global markets."
+  }
+}

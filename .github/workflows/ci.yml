@@ -1,0 +1,63 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: |
+            apps/web/package-lock.json
+            apps/cms/package-lock.json
+
+      # --- Next.js ---
+      - name: Install web dependencies
+        working-directory: apps/web
+        run: npm ci
+
+      - name: Lint web
+        working-directory: apps/web
+        run: npm run lint
+
+      - name: Typecheck web
+        working-directory: apps/web
+        run: npx tsc --noEmit
+
+      - name: Build web
+        working-directory: apps/web
+        env:
+          NEXT_PUBLIC_STRAPI_URL: http://localhost:1337
+          NEXT_PUBLIC_SITE_URL: http://localhost:3000
+          NEXT_PUBLIC_MEILI_HOST: http://localhost:7700
+          NEXT_PUBLIC_MEILI_SEARCH_KEY: placeholder
+        run: npm run build
+
+      # --- Strapi ---
+      - name: Install CMS dependencies
+        working-directory: apps/cms
+        run: npm ci
+
+      - name: Build CMS
+        working-directory: apps/cms
+        env:
+          DATABASE_CLIENT: postgres
+          DATABASE_HOST: localhost
+          DATABASE_PORT: 5432
+          DATABASE_NAME: strapi
+          DATABASE_USERNAME: strapi
+          DATABASE_PASSWORD: strapi
+          APP_KEYS: ci-key-1,ci-key-2,ci-key-3,ci-key-4
+          API_TOKEN_SALT: ci-salt
+          ADMIN_JWT_SECRET: ci-admin-jwt
+          JWT_SECRET: ci-jwt
+          TRANSFER_TOKEN_SALT: ci-transfer
+        run: npm run build

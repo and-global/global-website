@@ -1,0 +1,61 @@
+{
+  "common": {
+    "siteName": "株式会社エー・アンド・デイ",
+    "home": "ホーム",
+    "products": "製品情報",
+    "about": "会社概要",
+    "contact": "お問い合わせ",
+    "search": "検索",
+    "searchPlaceholder": "製品を検索...",
+    "language": "言語",
+    "english": "English",
+    "japanese": "日本語",
+    "loading": "読み込み中...",
+    "notFound": "ページが見つかりません",
+    "backToHome": "ホームに戻る",
+    "viewAll": "すべて見る",
+    "learnMore": "詳しく見る",
+    "readMore": "続きを読む",
+    "download": "ダウンロード",
+    "close": "閉じる",
+    "copyright": "© {year} 株式会社エー・アンド・デイ All rights reserved."
+  },
+  "home": {
+    "heroTitle": "すべての計測に精度を",
+    "heroSubtitle": "計測・計量機器、医療機器、自動車関連製品のリーディングメーカー",
+    "categoriesTitle": "製品カテゴリー",
+    "featuredTitle": "注目の製品",
+    "viewProducts": "製品を見る"
+  },
+  "products": {
+    "title": "製品情報",
+    "allCategories": "すべてのカテゴリー",
+    "noProducts": "製品が見つかりません。",
+    "specifications": "仕様",
+    "downloads": "ダウンロード",
+    "relatedProducts": "関連製品",
+    "modelNumber": "型番",
+    "sku": "SKU",
+    "fileSize": "{size} MB",
+    "searchResults": "{count}件の結果",
+    "noSearchResults": "「{query}」の検索結果はありません。"
+  },
+  "about": {
+    "title": "会社概要"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "nameLabel": "お名前",
+    "emailLabel": "メールアドレス",
+    "subjectLabel": "件名",
+    "messageLabel": "メッセージ",
+    "send": "送信する",
+    "sending": "送信中...",
+    "successMessage": "ありがとうございます。メッセージが送信されました。",
+    "errorMessage": "エラーが発生しました。もう一度お試しください。"
+  },
+  "seo": {
+    "defaultTitle": "株式会社エー・アンド・デイ - 精密計測機器",
+    "defaultDescription": "株式会社エー・アンド・デイは、精密計測機器、医療機器、自動車関連試験製品を世界市場に向けて製造しています。"
+  }
+}

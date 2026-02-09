@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Next.js
+apps/web/.next/
+apps/web/out/
+
+# Strapi
+apps/cms/.tmp/
+apps/cms/.cache/
+apps/cms/build/
+apps/cms/dist/
+apps/cms/exports/
+apps/cms/.strapi-updater.json
+apps/cms/.strapi/
+
+# Uploads (stored in volumes in production)
+apps/cms/public/uploads/
+
+# Database
+data/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# SSL certificates (stored on server)
+infrastructure/nginx/certs/
+
+# Build
+*.tsbuildinfo
+
+# Claude
+.claude/
