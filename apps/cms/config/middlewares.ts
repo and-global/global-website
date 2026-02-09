@@ -23,7 +23,8 @@ export default [
       origin: [
         "http://localhost:3000",
         "http://localhost:1337",
-        "https://*.anddcompany.com",
+        "https://global-test.aandd.jp",
+        "https://*.aandd.jp",
       ],
     },
   },
