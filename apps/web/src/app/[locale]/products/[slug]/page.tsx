@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import {
   getProductBySlug,
-  getAllProductSlugs,
   getStrapiImageUrl,
 } from "@/lib/strapi";
 import Container from "@/components/ui/Container";
@@ -11,18 +10,11 @@ import ProductGallery from "@/components/products/ProductGallery";
 import ProductSpecifications from "@/components/products/ProductSpecifications";
 import type { Product } from "@/lib/types";
 
+export const dynamic = "force-dynamic";
+
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
 };
-
-export async function generateStaticParams() {
-  try {
-    const slugs = await getAllProductSlugs();
-    return slugs.map(({ slug, locale }) => ({ slug, locale }));
-  } catch {
-    return [];
-  }
-}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
