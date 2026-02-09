@@ -14,6 +14,7 @@ RUN npm ci --only=production && \
 FROM base AS build
 COPY --from=deps /opt/app/node_modules ./node_modules
 COPY . .
+RUN mkdir -p /opt/app/public
 ENV NODE_ENV=production
 RUN npm run build
 
