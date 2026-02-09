@@ -61,7 +61,7 @@ export default async function ProductsPage({ params, searchParams }: Props) {
               href={`/${locale}/products`}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                 !category
-                  ? "bg-blue-600 text-white"
+                  ? "bg-brand-blue text-white"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >
@@ -73,7 +73,7 @@ export default async function ProductsPage({ params, searchParams }: Props) {
                 href={`/${locale}/products?category=${cat.slug}`}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                   category === cat.slug
-                    ? "bg-blue-600 text-white"
+                    ? "bg-brand-blue text-white"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
@@ -106,7 +106,7 @@ export default async function ProductsPage({ params, searchParams }: Props) {
                       href={`/${locale}/products?${category ? `category=${category}&` : ""}page=${p}`}
                       className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
                         p === pagination.page
-                          ? "bg-blue-600 text-white"
+                          ? "bg-brand-blue text-white"
                           : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                       }`}
                     >

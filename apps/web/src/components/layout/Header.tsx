@@ -39,9 +39,13 @@ export default function Header({ locale, siteSettings }: Props) {
                 className="h-8 w-auto"
               />
             ) : (
-              <span className="text-xl font-bold text-gray-900">
-                {siteSettings?.siteName || "A&D Company"}
-              </span>
+              <Image
+                src="/logo-blue.png"
+                alt="A&D Company"
+                width={120}
+                height={40}
+                className="h-8 w-auto"
+              />
             )}
           </Link>
 
@@ -51,7 +55,7 @@ export default function Header({ locale, siteSettings }: Props) {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                className="text-sm font-medium text-gray-700 hover:text-brand-blue transition-colors"
               >
                 {item.label}
               </Link>
@@ -88,7 +92,7 @@ export default function Header({ locale, siteSettings }: Props) {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-md"
+                  className="px-3 py-2 text-sm font-medium text-gray-700 hover:bg-brand-blue-light hover:text-brand-blue rounded-md"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.label}

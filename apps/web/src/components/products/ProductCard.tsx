@@ -26,11 +26,11 @@ export default function ProductCard({ product, locale }: Props) {
       )}
       <div className="p-4">
         {product.category && (
-          <span className="text-xs font-medium text-blue-600 uppercase tracking-wide">
+          <span className="text-xs font-medium text-brand-blue uppercase tracking-wide">
             {product.category.name}
           </span>
         )}
-        <h3 className="text-lg font-semibold mt-1 group-hover:text-blue-600 transition-colors">
+        <h3 className="text-lg font-semibold mt-1 group-hover:text-brand-blue transition-colors">
           {product.name}
         </h3>
         {product.modelNumber && (

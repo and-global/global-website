@@ -58,7 +58,7 @@ export default async function HomePage({ params }: Props) {
                     </div>
                   )}
                   <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-xl font-semibold mb-2 group-hover:text-brand-blue transition-colors">
                       {category.name}
                     </h3>
                     {category.description && (
@@ -82,7 +82,7 @@ export default async function HomePage({ params }: Props) {
               <h2 className="text-3xl font-bold">{t("featuredTitle")}</h2>
               <Link
                 href={`/${locale}/products`}
-                className="text-blue-600 hover:text-blue-800 font-medium"
+                className="text-brand-blue hover:text-brand-blue-dark font-medium"
               >
                 {tc("viewAll")} &rarr;
               </Link>

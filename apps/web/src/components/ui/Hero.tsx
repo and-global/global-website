@@ -8,7 +8,7 @@ type Props = {
 
 export default function Hero({ title, subtitle, locale }: Props) {
   return (
-    <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white">
+    <section className="relative bg-gradient-to-br from-brand-blue via-brand-blue-dark to-brand-purple text-white">
       <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-3xl">
@@ -22,7 +22,7 @@ export default function Hero({ title, subtitle, locale }: Props) {
         <div className="mt-10 flex gap-4">
           <Link
             href={`/${locale}/products`}
-            className="inline-flex items-center px-6 py-3 bg-white text-blue-900 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
+            className="inline-flex items-center px-6 py-3 bg-brand-yellow text-gray-900 font-semibold rounded-lg hover:bg-yellow-300 transition-colors"
           >
             {locale === "ja" ? "製品を見る" : "View Products"}
           </Link>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import type { SiteSetting } from "@/lib/types";
 
@@ -19,20 +20,24 @@ export default function Footer({ locale, siteSettings }: Props) {
   ];
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-brand-blue text-blue-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">
-              {siteSettings?.siteName || (locale === "ja" ? "株式会社エー・アンド・デイ" : "A&D Company, Ltd.")}
-            </h3>
+            <Image
+              src="/logo-white.png"
+              alt="A&D Company"
+              width={140}
+              height={46}
+              className="h-10 w-auto mb-4"
+            />
             {siteSettings?.footerText && (
-              <p className="text-sm">{siteSettings.footerText}</p>
+              <p className="text-sm text-blue-200">{siteSettings.footerText}</p>
             )}
             {siteSettings?.contactEmail && (
               <p className="text-sm mt-2">
-                <a href={`mailto:${siteSettings.contactEmail}`} className="hover:text-white">
+                <a href={`mailto:${siteSettings.contactEmail}`} className="hover:text-white transition-colors">
                   {siteSettings.contactEmail}
                 </a>
               </p>
@@ -52,7 +57,7 @@ export default function Footer({ locale, siteSettings }: Props) {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm hover:text-white transition-colors"
+                    className="text-sm text-blue-200 hover:text-white transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -73,7 +78,7 @@ export default function Footer({ locale, siteSettings }: Props) {
                     href={siteSettings.socialLinks.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-white transition-colors"
+                    className="text-blue-200 hover:text-white transition-colors"
                     aria-label="LinkedIn"
                   >
                     LinkedIn
@@ -84,7 +89,7 @@ export default function Footer({ locale, siteSettings }: Props) {
                     href={siteSettings.socialLinks.twitter}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-white transition-colors"
+                    className="text-blue-200 hover:text-white transition-colors"
                     aria-label="Twitter"
                   >
                     Twitter
@@ -95,7 +100,7 @@ export default function Footer({ locale, siteSettings }: Props) {
                     href={siteSettings.socialLinks.youtube}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-white transition-colors"
+                    className="text-blue-200 hover:text-white transition-colors"
                     aria-label="YouTube"
                   >
                     YouTube
@@ -107,7 +112,7 @@ export default function Footer({ locale, siteSettings }: Props) {
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 pt-8 border-t border-gray-800 text-sm text-center">
+        <div className="mt-8 pt-8 border-t border-blue-400/30 text-sm text-center text-blue-200">
           {siteSettings?.copyright || t("copyright", { year })}
         </div>
       </div>

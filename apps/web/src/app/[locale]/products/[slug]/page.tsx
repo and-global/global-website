@@ -123,11 +123,11 @@ export default async function ProductDetailPage({ params }: Props) {
         <Container>
           {/* Breadcrumb */}
           <nav className="mb-8 text-sm text-gray-500">
-            <a href={`/${locale}`} className="hover:text-blue-600">
+            <a href={`/${locale}`} className="hover:text-brand-blue">
               {locale === "ja" ? "ホーム" : "Home"}
             </a>
             <span className="mx-2">/</span>
-            <a href={`/${locale}/products`} className="hover:text-blue-600">
+            <a href={`/${locale}/products`} className="hover:text-brand-blue">
               {t("title")}
             </a>
             {product.category && (
@@ -135,7 +135,7 @@ export default async function ProductDetailPage({ params }: Props) {
                 <span className="mx-2">/</span>
                 <a
                   href={`/${locale}/products?category=${product.category.slug}`}
-                  className="hover:text-blue-600"
+                  className="hover:text-brand-blue"
                 >
                   {product.category.name}
                 </a>
@@ -205,7 +205,7 @@ export default async function ProductDetailPage({ params }: Props) {
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 p-4 border rounded-lg hover:bg-gray-50 transition-colors"
                   >
-                    <div className="flex-shrink-0 w-10 h-10 bg-blue-100 text-blue-600 rounded flex items-center justify-center">
+                    <div className="flex-shrink-0 w-10 h-10 bg-brand-blue-light text-brand-blue rounded flex items-center justify-center">
                       <svg
                         className="w-5 h-5"
                         fill="none"

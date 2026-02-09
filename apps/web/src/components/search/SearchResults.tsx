@@ -49,7 +49,7 @@ export default function SearchResults({
                 </p>
               )}
               {result.category && (
-                <span className="inline-block mt-1 text-xs text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">
+                <span className="inline-block mt-1 text-xs text-brand-blue bg-brand-blue-light px-2 py-0.5 rounded-full">
                   {result.category}
                 </span>
               )}
@@ -60,7 +60,7 @@ export default function SearchResults({
       {totalHits > results.length && (
         <Link
           href={`/${locale}/products?q=${encodeURIComponent(query)}`}
-          className="block px-4 py-3 text-sm text-center text-blue-600 hover:bg-gray-50 border-t"
+          className="block px-4 py-3 text-sm text-center text-brand-blue hover:bg-gray-50 border-t"
           onClick={onClose}
         >
           {locale === "ja" ? "すべての結果を見る" : "View all results"} &rarr;
