@@ -3,7 +3,7 @@ import { getAllProductSlugs } from "@/lib/strapi";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-  const locales = ["en", "ja"];
+  const locales = ["en", "ja", "es"];
 
   // Static pages
   const staticPages = ["", "/products", "/about", "/contact"];

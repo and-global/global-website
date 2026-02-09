@@ -30,11 +30,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       languages: {
         en: `${siteUrl}/en`,
         ja: `${siteUrl}/ja`,
+        es: `${siteUrl}/es`,
       },
     },
     openGraph: {
       siteName: locale === "ja" ? "株式会社エー・アンド・デイ" : "A&D Company, Ltd.",
-      locale: locale === "ja" ? "ja_JP" : "en_US",
+      locale: locale === "ja" ? "ja_JP" : locale === "es" ? "es_ES" : "en_US",
       type: "website",
     },
   };
@@ -43,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
 
-  if (!routing.locales.includes(locale as "en" | "ja")) {
+  if (!routing.locales.includes(locale as "en" | "ja" | "es")) {
     notFound();
   }
 

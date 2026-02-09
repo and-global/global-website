@@ -63,7 +63,7 @@ export default function SearchResults({
           className="block px-4 py-3 text-sm text-center text-brand-blue hover:bg-gray-50 border-t"
           onClick={onClose}
         >
-          {locale === "ja" ? "すべての結果を見る" : "View all results"} &rarr;
+          {locale === "ja" ? "すべての結果を見る" : locale === "es" ? "Ver todos los resultados" : "View all results"} &rarr;
         </Link>
       )}
     </div>

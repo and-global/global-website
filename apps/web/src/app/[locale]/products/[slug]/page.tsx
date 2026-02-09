@@ -40,6 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       languages: {
         en: `${siteUrl}/en/products/${slug}`,
         ja: `${siteUrl}/ja/products/${slug}`,
+        es: `${siteUrl}/es/products/${slug}`,
       },
     },
     openGraph: {
@@ -124,7 +125,7 @@ export default async function ProductDetailPage({ params }: Props) {
           {/* Breadcrumb */}
           <nav className="mb-8 text-sm text-gray-500">
             <a href={`/${locale}`} className="hover:text-brand-blue">
-              {locale === "ja" ? "ホーム" : "Home"}
+              {locale === "ja" ? "ホーム" : locale === "es" ? "Inicio" : "Home"}
             </a>
             <span className="mx-2">/</span>
             <a href={`/${locale}/products`} className="hover:text-brand-blue">

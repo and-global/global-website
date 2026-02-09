@@ -95,7 +95,7 @@ export async function getAllProductSlugs(): Promise<
 > {
   const slugs: { slug: string; locale: string }[] = [];
 
-  for (const locale of ["en", "ja"]) {
+  for (const locale of ["en", "ja", "es"]) {
     const res = await fetchStrapi<Product[]>("/products", {
       locale,
       fields: ["slug"],

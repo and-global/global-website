@@ -24,13 +24,13 @@ export default function Hero({ title, subtitle, locale }: Props) {
             href={`/${locale}/products`}
             className="inline-flex items-center px-6 py-3 bg-brand-yellow text-gray-900 font-semibold rounded-lg hover:bg-yellow-300 transition-colors"
           >
-            {locale === "ja" ? "製品を見る" : "View Products"}
+            {locale === "ja" ? "製品を見る" : locale === "es" ? "Ver Productos" : "View Products"}
           </Link>
           <Link
             href={`/${locale}/contact`}
             className="inline-flex items-center px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
           >
-            {locale === "ja" ? "お問い合わせ" : "Contact Us"}
+            {locale === "ja" ? "お問い合わせ" : locale === "es" ? "Contáctenos" : "Contact Us"}
           </Link>
         </div>
       </div>

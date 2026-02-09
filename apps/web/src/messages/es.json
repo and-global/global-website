@@ -1,0 +1,79 @@
+{
+  "common": {
+    "siteName": "A&D Company, Ltd.",
+    "home": "Inicio",
+    "products": "Productos",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto",
+    "search": "Buscar",
+    "searchPlaceholder": "Buscar productos...",
+    "language": "Idioma",
+    "english": "English",
+    "japanese": "日本語",
+    "loading": "Cargando...",
+    "notFound": "Página no encontrada",
+    "backToHome": "Volver al Inicio",
+    "viewAll": "Ver Todo",
+    "learnMore": "Más Información",
+    "readMore": "Leer Más",
+    "download": "Descargar",
+    "close": "Cerrar",
+    "copyright": "© {year} A&D Company, Ltd. Todos los derechos reservados."
+  },
+  "home": {
+    "heroTitle": "Percibiendo el Futuro",
+    "heroSubtitle": "Dominando la Medición, Apoyando al Mundo",
+    "categoriesTitle": "Categorías de Productos",
+    "featuredTitle": "Productos Destacados",
+    "viewProducts": "Ver Productos"
+  },
+  "products": {
+    "title": "Productos",
+    "allCategories": "Todas las Categorías",
+    "noProducts": "No se encontraron productos.",
+    "specifications": "Especificaciones",
+    "downloads": "Descargas",
+    "relatedProducts": "Productos Relacionados",
+    "modelNumber": "Número de Modelo",
+    "sku": "SKU",
+    "fileSize": "{size} MB",
+    "searchResults": "{count} resultados encontrados",
+    "noSearchResults": "No se encontraron resultados para \"{query}\"."
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "companyProfile": "Perfil de la Empresa",
+    "companyName": "A&D Company, Limited",
+    "companyNameLabel": "Razón Social",
+    "companyNameOrigin": "El acrónimo \"A&D\" representa \"Analog\" (Analógico) y \"Digital\", reflejando nuestra tecnología central de convertir mediciones analógicas en valores digitales.",
+    "headquartersLabel": "Sede Central",
+    "headquarters": "3-23-14 Higashi-Ikebukuro, Toshima-ku, Tokio 170-0013, Japón",
+    "representativeLabel": "Director Representante y Presidente",
+    "representative": "Yasunobu Morishima",
+    "businessLabel": "Descripción del Negocio",
+    "business": "Investigación, desarrollo, fabricación y venta de instrumentos de medición electrónicos, equipos de pesaje industrial, balanzas electrónicas, dispositivos médicos electrónicos, máquinas de ensayo y otros equipos de aplicación electrónica.",
+    "qualityLabel": "Certificaciones de Calidad",
+    "qualityISO9001": "ISO 9001 (FM 767451 — BSI)",
+    "qualityISO13485": "ISO 13485 (MD 767450 — BSI)",
+    "corporateVision": "Visión Corporativa",
+    "vision": "Percibiendo el Futuro — Dominando la Medición, Apoyando al Mundo",
+    "visionDescription": "A&D se compromete a avanzar en las tecnologías de medición analógica y digital. Contribuimos al desarrollo de la industria y la sociedad a través de productos innovadores en los campos de pesaje, medición, equipos médicos y pruebas automotrices.",
+    "globalPresence": "Presencia Global",
+    "globalDescription": "Con operaciones en las Américas, Europa, Asia-Pacífico y Oceanía, A&D atiende a clientes en más de 100 países en todo el mundo."
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "nameLabel": "Nombre",
+    "emailLabel": "Correo Electrónico",
+    "subjectLabel": "Asunto",
+    "messageLabel": "Mensaje",
+    "send": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "successMessage": "¡Gracias! Su mensaje ha sido enviado.",
+    "errorMessage": "Algo salió mal. Por favor, inténtelo de nuevo."
+  },
+  "seo": {
+    "defaultTitle": "A&D Company, Ltd. - Instrumentos de Medición de Precisión",
+    "defaultDescription": "A&D Company, Ltd. fabrica instrumentos de medición de precisión, dispositivos médicos y productos de pruebas automotrices para mercados globales."
+  }
+}

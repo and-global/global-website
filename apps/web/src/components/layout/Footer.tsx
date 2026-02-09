@@ -50,7 +50,7 @@ export default function Footer({ locale, siteSettings }: Props) {
           {/* Navigation */}
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">
-              {locale === "ja" ? "リンク" : "Links"}
+              {locale === "ja" ? "リンク" : locale === "es" ? "Enlaces" : "Links"}
             </h3>
             <ul className="space-y-2">
               {navItems.map((item) => (
@@ -70,7 +70,7 @@ export default function Footer({ locale, siteSettings }: Props) {
           {siteSettings?.socialLinks && (
             <div>
               <h3 className="text-white text-lg font-semibold mb-4">
-                {locale === "ja" ? "ソーシャル" : "Social"}
+                {locale === "ja" ? "ソーシャル" : locale === "es" ? "Redes Sociales" : "Social"}
               </h3>
               <div className="flex gap-4">
                 {siteSettings.socialLinks.linkedin && (
