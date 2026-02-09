@@ -1,7 +1,15 @@
-import createMiddleware from "next-intl/middleware";
-import { routing } from "./src/i18n/routing";
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
-export default createMiddleware(routing);
+export function middleware(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+
+  if (pathname === "/") {
+    return NextResponse.redirect(new URL("/en", request.url));
+  }
+
+  return NextResponse.next();
+}
 
 export const config = {
   matcher: ["/", "/(en|ja)/:path*"],
