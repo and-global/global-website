@@ -26,8 +26,9 @@ COPY --from=deps /opt/app/prod_node_modules ./node_modules
 COPY --from=build /opt/app/dist ./dist
 COPY --from=build /opt/app/public ./public
 COPY --from=build /opt/app/package.json ./
-COPY --from=build /opt/app/config ./config
-COPY --from=build /opt/app/src ./src
+# Copy compiled JS config and src from dist
+COPY --from=build /opt/app/dist/config ./config
+COPY --from=build /opt/app/dist/src ./src
 
 RUN mkdir -p /opt/app/public/uploads && \
     chown -R node:node /opt/app
