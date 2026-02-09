@@ -29,6 +29,8 @@ COPY --from=build /opt/app/package.json ./
 # Copy compiled JS config and src from dist
 COPY --from=build /opt/app/dist/config ./config
 COPY --from=build /opt/app/dist/src ./src
+# Copy admin panel build to the location Strapi expects
+COPY --from=build /opt/app/dist/build ./node_modules/@strapi/admin/dist/server/server/build
 
 RUN mkdir -p /opt/app/public/uploads && \
     chown -R node:node /opt/app
