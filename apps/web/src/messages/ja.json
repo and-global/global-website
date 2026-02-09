@@ -21,8 +21,8 @@
     "copyright": "© {year} 株式会社エー・アンド・デイ All rights reserved."
   },
   "home": {
-    "heroTitle": "すべての計測に精度を",
-    "heroSubtitle": "計測・計量機器、医療機器、自動車関連製品のリーディングメーカー",
+    "heroTitle": "はかるを究め 未来をひらく",
+    "heroSubtitle": "計測を極め、世界を支える",
     "categoriesTitle": "製品カテゴリー",
     "featuredTitle": "注目の製品",
     "viewProducts": "製品を見る"
@@ -41,7 +41,25 @@
     "noSearchResults": "「{query}」の検索結果はありません。"
   },
   "about": {
-    "title": "会社概要"
+    "title": "会社概要",
+    "companyProfile": "会社概要",
+    "companyName": "株式会社エー・アンド・デイ",
+    "companyNameLabel": "商号",
+    "companyNameOrigin": "「A&D」は「アナログ」と「デジタル」の頭文字であり、アナログ計測値をデジタル値に変換するコア技術を象徴しています。",
+    "headquartersLabel": "本社所在地",
+    "headquarters": "〒170-0013 東京都豊島区東池袋三丁目23番14号",
+    "representativeLabel": "代表取締役社長",
+    "representative": "森島 泰信",
+    "businessLabel": "事業内容",
+    "business": "電子計測器、産業用重量計、電子天びん、医療用電子機器、試験機 その他 電子応用機器の研究開発、製造、販売",
+    "qualityLabel": "品質認証",
+    "qualityISO9001": "ISO 9001 (FM 767451 — BSI)",
+    "qualityISO13485": "ISO 13485 (MD 767450 — BSI)",
+    "corporateVision": "企業理念",
+    "vision": "はかるを究め 未来をひらく — 計測を極め、世界を支える",
+    "visionDescription": "エー・アンド・デイは、アナログとデジタルの計測技術の発展に取り組んでいます。計量・計測、医療、自動車試験分野における革新的な製品を通じて、産業と社会の発展に貢献します。",
+    "globalPresence": "グローバル展開",
+    "globalDescription": "南北アメリカ、ヨーロッパ、アジア太平洋、オセアニアに事業を展開し、世界100カ国以上のお客様にサービスを提供しています。"
   },
   "contact": {
     "title": "お問い合わせ",

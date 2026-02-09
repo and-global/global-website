@@ -8,7 +8,7 @@ type Props = {
 
 export default function Hero({ title, subtitle, locale }: Props) {
   return (
-    <section className="relative bg-gradient-to-br from-brand-blue via-brand-blue-dark to-brand-purple text-white">
+    <section className="relative bg-brand-blue text-white">
       <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-3xl">

@@ -21,8 +21,8 @@
     "copyright": "© {year} A&D Company, Ltd. All rights reserved."
   },
   "home": {
-    "heroTitle": "Precision in Every Measurement",
-    "heroSubtitle": "Leading manufacturer of measuring instruments, medical devices, and automotive products",
+    "heroTitle": "Sensing the Future",
+    "heroSubtitle": "Mastering Measurement, Supporting the World",
     "categoriesTitle": "Product Categories",
     "featuredTitle": "Featured Products",
     "viewProducts": "View Products"
@@ -41,7 +41,25 @@
     "noSearchResults": "No results found for \"{query}\"."
   },
   "about": {
-    "title": "About Us"
+    "title": "About Us",
+    "companyProfile": "Company Profile",
+    "companyName": "A&D Company, Limited",
+    "companyNameLabel": "Company Name",
+    "companyNameOrigin": "The acronym \"A&D\" represents \"Analog\" and \"Digital,\" reflecting our core technology of converting analog measurements into digital values.",
+    "headquartersLabel": "Headquarters",
+    "headquarters": "3-23-14 Higashi-Ikebukuro, Toshima-ku, Tokyo 170-0013, Japan",
+    "representativeLabel": "Representative Director & President",
+    "representative": "Yasunobu Morishima",
+    "businessLabel": "Business Description",
+    "business": "Research, development, manufacturing, and sales of electronic measuring instruments, industrial weighing equipment, electronic balances, medical electronic devices, testing machines, and other electronic application equipment.",
+    "qualityLabel": "Quality Certifications",
+    "qualityISO9001": "ISO 9001 (FM 767451 — BSI)",
+    "qualityISO13485": "ISO 13485 (MD 767450 — BSI)",
+    "corporateVision": "Corporate Vision",
+    "vision": "Sensing the Future — Mastering Measurement, Supporting the World",
+    "visionDescription": "A&D is committed to advancing analog and digital measurement technologies. We contribute to the development of industry and society through innovative products across weighing, measurement, medical, and automotive testing fields.",
+    "globalPresence": "Global Presence",
+    "globalDescription": "With operations spanning the Americas, Europe, Asia-Pacific, and Oceania, A&D serves customers in over 100 countries worldwide."
   },
   "contact": {
     "title": "Contact Us",
